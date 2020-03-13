@@ -1,0 +1,18 @@
+package me.myiu.reproducer;
+unit ReproducerService;
+
+rule "Rule 1"
+    dialect "java"
+    salience 0
+    no-loop
+    when
+        input: /input
+    then
+        output.set("Output");
+        System.out.println("New output created");
+end
+
+
+
+
+
